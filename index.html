@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="title-container">
+      <div id="main-title">Learn to code by watching others</div>
+      <div id="sub-title">Learn how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable</div>
+    </div>
+
+    <div id="form-container">
+      <div id="offer">
+        <span>Try it free 7 days</span>
+        <span>then $20/month. thereafter</span>
+      </div>
+
+      <form id="form">
+        <input id="first-name" type="text" name="first-name" placeholder="First Name" onblur="blurFirstName()">
+        <label id="first-name-label" for="first-name"></label>
+
+        <input id="last-name" type="text" name="last-name" placeholder="Last Name" onblur="blurLastName()">
+        <label id="last-name-label" for="last-name"></label>
+
+        <input id="email-address" type="email" name="email-address" placeholder="Email" onblur="blurEmailAddress()">
+        <label id="email-address-label" for="email-address"></label>
+
+        <input id="password" type="password" name="password" placeholder="Password" onblur="blurPassword()">
+        <label id="password-label" for="password"></label>
+
+        <button>Claim you free trial</button>
+
+        <div id="terms-and-conditions">
+          By clicking the button you are agreeing to our <a href="_blank">terms and services</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
